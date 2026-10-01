@@ -1,0 +1,119 @@
+{
+  "model_name": "Random Forest",
+  "version": "1.0.0",
+  "training_date_utc": "2026-09-30T10:10:39+00:00",
+  "target": "HeartDisease",
+  "target_labels": {
+    "0": "No Heart Disease",
+    "1": "Heart Disease"
+  },
+  "features": [
+    "Age",
+    "Sex",
+    "ChestPainType",
+    "RestingBP",
+    "Cholesterol",
+    "FastingBS",
+    "RestingECG",
+    "MaxHR",
+    "ExerciseAngina",
+    "Oldpeak",
+    "ST_Slope"
+  ],
+  "numeric_features": [
+    "Age",
+    "RestingBP",
+    "Cholesterol",
+    "MaxHR",
+    "Oldpeak",
+    "FastingBS"
+  ],
+  "categorical_features": [
+    "Sex",
+    "ChestPainType",
+    "RestingECG",
+    "ExerciseAngina",
+    "ST_Slope"
+  ],
+  "engineered_features": [
+    "MaxHR_pct_predicted = MaxHR / (220 - Age)"
+  ],
+  "preprocessing_steps": [
+    "Strip whitespace / normalise categorical labels",
+    "RestingBP == 0 and Cholesterol == 0 -> missing (physiologically impossible; encodes 'not recorded')",
+    "FeatureEngineer: MaxHR_pct_predicted",
+    "Numeric: median imputation + StandardScaler (fitted on training split only)",
+    "Categorical: most-frequent imputation + OneHotEncoder(handle_unknown='ignore')"
+  ],
+  "hyperparameters": {
+    "class_weight": null,
+    "max_depth": 14,
+    "max_features": "sqrt",
+    "min_samples_leaf": 4,
+    "n_estimators": 458
+  },
+  "evaluation_metrics": {
+    "held_out_test": {
+      "accuracy": 0.8299319727891157,
+      "precision": 0.8255813953488372,
+      "recall": 0.8765432098765432,
+      "specificity": 0.7727272727272727,
+      "f1": 0.8502994011976048,
+      "roc_auc": 0.905910961466517,
+      "average_precision": 0.8802641322569589,
+      "confusion_matrix": {
+        "tn": 51,
+        "fp": 15,
+        "fn": 10,
+        "tp": 71
+      }
+    },
+    "cross_validation": {
+      "cv_roc_auc": 0.9314692419336833,
+      "cv_roc_auc_std": 0.02139301287769396,
+      "cv_f1": 0.8680580413884694,
+      "cv_f1_std": 0.024170267959197498,
+      "cv_recall": 0.8861538461538462,
+      "cv_recall_std": 0.012307692307692315
+    }
+  },
+  "dataset": {
+    "source": "Kaggle - fedesoriano, 'Heart Failure Prediction Dataset' (Sept 2021)",
+    "url": "https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction",
+    "license": "Database: Open Database (ODbL), Contents: \u00a9 Original Authors",
+    "labelled_records": 734,
+    "train_records": 587,
+    "test_records": 147,
+    "class_distribution": {
+      "No Heart Disease": 328,
+      "Heart Disease": 406
+    }
+  },
+  "shap_explainer": "tree",
+  "decision_threshold": 0.5,
+  "risk_bands": [
+    {
+      "low": 0.0,
+      "high": 0.3,
+      "label": "Low"
+    },
+    {
+      "low": 0.3,
+      "high": 0.6,
+      "label": "Moderate"
+    },
+    {
+      "low": 0.6,
+      "high": 1.0,
+      "label": "High"
+    }
+  ],
+  "random_state": 42,
+  "library_versions": {
+    "python": "3.11.15",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6"
+  },
+  "disclaimer": "This application is an academic machine-learning demonstration and is not a medical diagnostic system. Predictions should not be used for diagnosis, treatment, or medical decision-making. Always consult a qualified healthcare professional for medical advice."
+}

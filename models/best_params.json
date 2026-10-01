@@ -1,0 +1,29 @@
+{
+  "selected_model": "Random Forest",
+  "best_params": {
+    "Random Forest": {
+      "class_weight": null,
+      "max_depth": 14,
+      "max_features": "sqrt",
+      "min_samples_leaf": 4,
+      "n_estimators": 458
+    },
+    "Gradient Boosting": {
+      "learning_rate": 0.018861950443028862,
+      "max_depth": 3,
+      "min_samples_leaf": 11,
+      "n_estimators": 177,
+      "subsample": 0.922976062065625
+    },
+    "LightGBM": {
+      "colsample_bytree": 0.9692763545078751,
+      "learning_rate": 0.010026522473407051,
+      "min_child_samples": 25,
+      "n_estimators": 260,
+      "num_leaves": 15,
+      "reg_lambda": 0.6838478430964046,
+      "subsample": 0.6028265220878869,
+      "subsample_freq": 1
+    }
+  }
+}
