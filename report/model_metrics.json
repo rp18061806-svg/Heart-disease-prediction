@@ -1,0 +1,55 @@
+{
+  "model_name": "Random Forest",
+  "evaluation_set": "held-out stratified test split (n=147)",
+  "threshold": 0.5,
+  "test": {
+    "accuracy": 0.8299319727891157,
+    "precision": 0.8255813953488372,
+    "recall": 0.8765432098765432,
+    "specificity": 0.7727272727272727,
+    "f1": 0.8502994011976048,
+    "roc_auc": 0.905910961466517,
+    "average_precision": 0.8802641322569589,
+    "confusion_matrix": {
+      "tn": 51,
+      "fp": 15,
+      "fn": 10,
+      "tp": 71
+    }
+  },
+  "cross_validation": {
+    "cv_roc_auc": 0.9314692419336833,
+    "cv_roc_auc_std": 0.02139301287769396,
+    "cv_f1": 0.8680580413884694,
+    "cv_f1_std": 0.024170267959197498,
+    "cv_recall": 0.8861538461538462,
+    "cv_recall_std": 0.012307692307692315
+  },
+  "classification_report": {
+    "No Heart Disease": {
+      "precision": 0.8360655737704918,
+      "recall": 0.7727272727272727,
+      "f1-score": 0.8031496062992126,
+      "support": 66.0
+    },
+    "Heart Disease": {
+      "precision": 0.8255813953488372,
+      "recall": 0.8765432098765432,
+      "f1-score": 0.8502994011976048,
+      "support": 81.0
+    },
+    "accuracy": 0.8299319727891157,
+    "macro avg": {
+      "precision": 0.8308234845596645,
+      "recall": 0.824635241301908,
+      "f1-score": 0.8267245037484088,
+      "support": 147.0
+    },
+    "weighted avg": {
+      "precision": 0.8302885774973352,
+      "recall": 0.8299319727891157,
+      "f1-score": 0.8291301055289388,
+      "support": 147.0
+    }
+  }
+}

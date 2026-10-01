@@ -1,0 +1,632 @@
+{
+  "labelled_file": {
+    "file_name": "heart_train.csv",
+    "n_rows": 734,
+    "n_columns": 12,
+    "columns": [
+      "Age",
+      "Sex",
+      "ChestPainType",
+      "RestingBP",
+      "Cholesterol",
+      "FastingBS",
+      "RestingECG",
+      "MaxHR",
+      "ExerciseAngina",
+      "Oldpeak",
+      "ST_Slope",
+      "HeartDisease"
+    ],
+    "n_duplicate_rows": 0,
+    "columns_detail": {
+      "Age": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 49,
+        "top_value_share": 0.0545,
+        "constant": false,
+        "near_constant": false,
+        "min": 29.0,
+        "q1": 47.0,
+        "median": 55.0,
+        "mean": 53.849,
+        "q3": 61.0,
+        "max": 77.0,
+        "std": 9.441,
+        "skew": -0.213,
+        "n_zeros": 0,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": 26.0,
+          "upper_fence": 82.0,
+          "n_outliers": 0,
+          "pct_outliers": 0.0
+        }
+      },
+      "Sex": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 2,
+        "top_value_share": 0.7888,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 2,
+        "value_counts": {
+          "M": 579,
+          "F": 155
+        },
+        "has_leading_trailing_spaces": false
+      },
+      "ChestPainType": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 4,
+        "top_value_share": 0.549,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 4,
+        "value_counts": {
+          "ASY": 403,
+          "NAP": 155,
+          "ATA": 136,
+          "TA": 40
+        },
+        "has_leading_trailing_spaces": false
+      },
+      "RestingBP": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 61,
+        "top_value_share": 0.1526,
+        "constant": false,
+        "near_constant": false,
+        "min": 92.0,
+        "q1": 120.0,
+        "median": 130.0,
+        "mean": 132.875,
+        "q3": 141.0,
+        "max": 200.0,
+        "std": 18.08,
+        "skew": 0.631,
+        "n_zeros": 0,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": 88.5,
+          "upper_fence": 172.5,
+          "n_outliers": 20,
+          "pct_outliers": 2.72
+        }
+      },
+      "Cholesterol": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 212,
+        "top_value_share": 0.1757,
+        "constant": false,
+        "near_constant": false,
+        "min": 0.0,
+        "q1": 180.0,
+        "median": 225.0,
+        "mean": 203.228,
+        "q3": 269.75,
+        "max": 603.0,
+        "std": 108.402,
+        "skew": -0.639,
+        "n_zeros": 129,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": 45.375,
+          "upper_fence": 404.375,
+          "n_outliers": 140,
+          "pct_outliers": 19.07
+        }
+      },
+      "FastingBS": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 2,
+        "top_value_share": 0.7711,
+        "constant": false,
+        "near_constant": false,
+        "min": 0.0,
+        "q1": 0.0,
+        "median": 0.0,
+        "mean": 0.229,
+        "q3": 0.0,
+        "max": 1.0,
+        "std": 0.42,
+        "skew": 1.293,
+        "n_zeros": 566,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "n_outliers": 168,
+          "pct_outliers": 22.89
+        },
+        "value_counts": {
+          "0": 566,
+          "1": 168
+        }
+      },
+      "RestingECG": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 3,
+        "top_value_share": 0.609,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 3,
+        "value_counts": {
+          "Normal": 447,
+          "LVH": 146,
+          "ST": 141
+        },
+        "has_leading_trailing_spaces": false
+      },
+      "MaxHR": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 116,
+        "top_value_share": 0.0463,
+        "constant": false,
+        "near_constant": false,
+        "min": 60.0,
+        "q1": 119.0,
+        "median": 138.0,
+        "mean": 136.377,
+        "q3": 156.0,
+        "max": 202.0,
+        "std": 25.832,
+        "skew": -0.189,
+        "n_zeros": 0,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": 63.5,
+          "upper_fence": 211.5,
+          "n_outliers": 2,
+          "pct_outliers": 0.27
+        }
+      },
+      "ExerciseAngina": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 2,
+        "top_value_share": 0.5913,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 2,
+        "value_counts": {
+          "N": 434,
+          "Y": 300
+        },
+        "has_leading_trailing_spaces": false
+      },
+      "Oldpeak": {
+        "dtype": "float64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 51,
+        "top_value_share": 0.4142,
+        "constant": false,
+        "near_constant": false,
+        "min": -2.6,
+        "q1": 0.0,
+        "median": 0.5,
+        "mean": 0.865,
+        "q3": 1.5,
+        "max": 5.6,
+        "std": 1.057,
+        "skew": 0.954,
+        "n_zeros": 304,
+        "n_negative": 12,
+        "iqr_outliers": {
+          "lower_fence": -2.25,
+          "upper_fence": 3.75,
+          "n_outliers": 13,
+          "pct_outliers": 1.77
+        }
+      },
+      "ST_Slope": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 3,
+        "top_value_share": 0.5095,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 3,
+        "value_counts": {
+          "Flat": 374,
+          "Up": 313,
+          "Down": 47
+        },
+        "has_leading_trailing_spaces": false
+      },
+      "HeartDisease": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 2,
+        "top_value_share": 0.5531,
+        "constant": false,
+        "near_constant": false,
+        "min": 0.0,
+        "q1": 0.0,
+        "median": 1.0,
+        "mean": 0.553,
+        "q3": 1.0,
+        "max": 1.0,
+        "std": 0.498,
+        "skew": -0.214,
+        "n_zeros": 328,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": -1.5,
+          "upper_fence": 2.5,
+          "n_outliers": 0,
+          "pct_outliers": 0.0
+        },
+        "value_counts": {
+          "0": 328,
+          "1": 406
+        }
+      }
+    }
+  },
+  "unlabelled_file": {
+    "file_name": "heart_test.csv",
+    "n_rows": 184,
+    "n_columns": 11,
+    "columns": [
+      "Age",
+      "Sex",
+      "ChestPainType",
+      "RestingBP",
+      "Cholesterol",
+      "FastingBS",
+      "RestingECG",
+      "MaxHR",
+      "ExerciseAngina",
+      "Oldpeak",
+      "ST_Slope"
+    ],
+    "n_duplicate_rows": 0,
+    "columns_detail": {
+      "Age": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 43,
+        "top_value_share": 0.0652,
+        "constant": false,
+        "near_constant": false,
+        "min": 28.0,
+        "q1": 45.75,
+        "median": 52.0,
+        "mean": 52.163,
+        "q3": 58.0,
+        "max": 75.0,
+        "std": 9.305,
+        "skew": -0.144,
+        "n_zeros": 0,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": 27.375,
+          "upper_fence": 76.375,
+          "n_outliers": 0,
+          "pct_outliers": 0.0
+        }
+      },
+      "Sex": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 2,
+        "top_value_share": 0.7935,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 2,
+        "value_counts": {
+          "M": 146,
+          "F": 38
+        },
+        "has_leading_trailing_spaces": false
+      },
+      "ChestPainType": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 4,
+        "top_value_share": 0.5054,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 4,
+        "value_counts": {
+          "ASY": 93,
+          "NAP": 48,
+          "ATA": 37,
+          "TA": 6
+        },
+        "has_leading_trailing_spaces": false
+      },
+      "RestingBP": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 44,
+        "top_value_share": 0.1196,
+        "constant": false,
+        "near_constant": false,
+        "min": 0.0,
+        "q1": 120.0,
+        "median": 130.0,
+        "mean": 130.489,
+        "q3": 140.0,
+        "max": 192.0,
+        "std": 20.091,
+        "skew": -1.092,
+        "n_zeros": 1,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": 90.0,
+          "upper_fence": 170.0,
+          "n_outliers": 6,
+          "pct_outliers": 3.26
+        }
+      },
+      "Cholesterol": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 92,
+        "top_value_share": 0.2337,
+        "constant": false,
+        "near_constant": false,
+        "min": 0.0,
+        "q1": 155.25,
+        "median": 210.5,
+        "mean": 181.136,
+        "q3": 254.5,
+        "max": 518.0,
+        "std": 111.779,
+        "skew": -0.504,
+        "n_zeros": 43,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": 6.375,
+          "upper_fence": 403.375,
+          "n_outliers": 45,
+          "pct_outliers": 24.46
+        }
+      },
+      "FastingBS": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 2,
+        "top_value_share": 0.75,
+        "constant": false,
+        "near_constant": false,
+        "min": 0.0,
+        "q1": 0.0,
+        "median": 0.0,
+        "mean": 0.25,
+        "q3": 0.25,
+        "max": 1.0,
+        "std": 0.434,
+        "skew": 1.164,
+        "n_zeros": 138,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": -0.375,
+          "upper_fence": 0.625,
+          "n_outliers": 46,
+          "pct_outliers": 25.0
+        },
+        "value_counts": {
+          "0": 138,
+          "1": 46
+        }
+      },
+      "RestingECG": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 3,
+        "top_value_share": 0.5707,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 3,
+        "value_counts": {
+          "Normal": 105,
+          "LVH": 42,
+          "ST": 37
+        },
+        "has_leading_trailing_spaces": false
+      },
+      "MaxHR": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 74,
+        "top_value_share": 0.0489,
+        "constant": false,
+        "near_constant": false,
+        "min": 80.0,
+        "q1": 121.75,
+        "median": 139.0,
+        "mean": 138.533,
+        "q3": 155.25,
+        "max": 195.0,
+        "std": 23.909,
+        "skew": 0.117,
+        "n_zeros": 0,
+        "n_negative": 0,
+        "iqr_outliers": {
+          "lower_fence": 71.5,
+          "upper_fence": 205.5,
+          "n_outliers": 0,
+          "pct_outliers": 0.0
+        }
+      },
+      "ExerciseAngina": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 2,
+        "top_value_share": 0.6141,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 2,
+        "value_counts": {
+          "N": 113,
+          "Y": 71
+        },
+        "has_leading_trailing_spaces": false
+      },
+      "Oldpeak": {
+        "dtype": "float64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 31,
+        "top_value_share": 0.3478,
+        "constant": false,
+        "near_constant": false,
+        "min": -0.1,
+        "q1": 0.0,
+        "median": 0.6499999999999999,
+        "mean": 0.976,
+        "q3": 1.725,
+        "max": 6.2,
+        "std": 1.103,
+        "skew": 1.267,
+        "n_zeros": 64,
+        "n_negative": 1,
+        "iqr_outliers": {
+          "lower_fence": -2.588,
+          "upper_fence": 4.312,
+          "n_outliers": 1,
+          "pct_outliers": 0.54
+        }
+      },
+      "ST_Slope": {
+        "dtype": "str",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_unique": 3,
+        "top_value_share": 0.4674,
+        "constant": false,
+        "near_constant": false,
+        "cardinality": 3,
+        "value_counts": {
+          "Flat": 86,
+          "Up": 82,
+          "Down": 16
+        },
+        "has_leading_trailing_spaces": false
+      }
+    }
+  },
+  "target_candidates": [
+    "HeartDisease"
+  ],
+  "correlations_labelled": {
+    "matrix": {
+      "Age": {
+        "Age": 1.0,
+        "RestingBP": 0.259,
+        "Cholesterol": -0.102,
+        "FastingBS": 0.2,
+        "MaxHR": -0.398,
+        "Oldpeak": 0.226,
+        "HeartDisease": 0.245
+      },
+      "RestingBP": {
+        "Age": 0.259,
+        "RestingBP": 1.0,
+        "Cholesterol": 0.081,
+        "FastingBS": 0.075,
+        "MaxHR": -0.121,
+        "Oldpeak": 0.152,
+        "HeartDisease": 0.102
+      },
+      "Cholesterol": {
+        "Age": -0.102,
+        "RestingBP": 0.081,
+        "Cholesterol": 1.0,
+        "FastingBS": -0.287,
+        "MaxHR": 0.262,
+        "Oldpeak": 0.092,
+        "HeartDisease": -0.241
+      },
+      "FastingBS": {
+        "Age": 0.2,
+        "RestingBP": 0.075,
+        "Cholesterol": -0.287,
+        "FastingBS": 1.0,
+        "MaxHR": -0.146,
+        "Oldpeak": 0.047,
+        "HeartDisease": 0.261
+      },
+      "MaxHR": {
+        "Age": -0.398,
+        "RestingBP": -0.121,
+        "Cholesterol": 0.262,
+        "FastingBS": -0.146,
+        "MaxHR": 1.0,
+        "Oldpeak": -0.146,
+        "HeartDisease": -0.407
+      },
+      "Oldpeak": {
+        "Age": 0.226,
+        "RestingBP": 0.152,
+        "Cholesterol": 0.092,
+        "FastingBS": 0.047,
+        "MaxHR": -0.146,
+        "Oldpeak": 1.0,
+        "HeartDisease": 0.377
+      },
+      "HeartDisease": {
+        "Age": 0.245,
+        "RestingBP": 0.102,
+        "Cholesterol": -0.241,
+        "FastingBS": 0.261,
+        "MaxHR": -0.407,
+        "Oldpeak": 0.377,
+        "HeartDisease": 1.0
+      }
+    },
+    "high_pairs": []
+  },
+  "column_sets_match": true,
+  "overlap_rows_between_files": 0,
+  "target_distribution_HeartDisease": {
+    "counts": {
+      "1": 406,
+      "0": 328
+    },
+    "pct": {
+      "1": 55.31,
+      "0": 44.69
+    },
+    "imbalance_ratio_major_to_minor": 1.238
+  },
+  "target_correlation_HeartDisease": {
+    "Age": 0.245,
+    "RestingBP": 0.102,
+    "Cholesterol": -0.241,
+    "FastingBS": 0.261,
+    "MaxHR": -0.407,
+    "Oldpeak": 0.377
+  }
+}

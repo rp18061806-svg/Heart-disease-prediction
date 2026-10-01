@@ -1,0 +1,59 @@
+{
+  "bootstrap_95ci_n2000": {
+    "roc_auc": [
+      0.849,
+      0.952
+    ],
+    "recall": [
+      0.802,
+      0.941
+    ],
+    "f1": [
+      0.785,
+      0.901
+    ],
+    "accuracy": [
+      0.769,
+      0.884
+    ]
+  },
+  "threshold_table": [
+    {
+      "threshold": 0.3,
+      "recall": 0.975,
+      "precision": 0.79,
+      "specificity": 0.682,
+      "f1": 0.873,
+      "false_negatives": 2,
+      "false_positives": 21
+    },
+    {
+      "threshold": 0.4,
+      "recall": 0.926,
+      "precision": 0.806,
+      "specificity": 0.727,
+      "f1": 0.862,
+      "false_negatives": 6,
+      "false_positives": 18
+    },
+    {
+      "threshold": 0.5,
+      "recall": 0.877,
+      "precision": 0.826,
+      "specificity": 0.773,
+      "f1": 0.85,
+      "false_negatives": 10,
+      "false_positives": 15
+    },
+    {
+      "threshold": 0.6,
+      "recall": 0.802,
+      "precision": 0.867,
+      "specificity": 0.848,
+      "f1": 0.833,
+      "false_negatives": 16,
+      "false_positives": 10
+    }
+  ],
+  "majority_class_accuracy": 0.551
+}
