@@ -166,7 +166,7 @@ Predictions should not be used for diagnosis, treatment, or medical decision-mak
 qualified healthcare professional for medical advice.
 
 ## 20. Author
-**[Your Name]** — [Degree / Department], [College / University], [Year]
+**[Rupesh Ajay Patil]** — [B.Tech/ Artificial Intelligence], [G H Raisoni collage ], [2027]
 Contact: [your GitHub profile URL]
 
 ---
